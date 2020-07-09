@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="232px" height="56px" viewBox="0 0 232 56" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>bt/red</title>
+    <desc>Created with Sketch.</desc>
+    <g id="LineUp-Mobile-nouveau-design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Ticket-virtuel" transform="translate(-72.000000, -610.000000)">
+            <g id="bt/red" transform="translate(72.000000, 610.000000)">
+                <rect id="bg" fill="#820D2E" x="0" y="0" width="232" height="56" rx="4"></rect>
+                <text id="Retour" font-family="Avenir-Medium, Avenir" font-size="16" font-weight="400" fill="#F9F9F9">
+                    <tspan x="91.544" y="35">Retour</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

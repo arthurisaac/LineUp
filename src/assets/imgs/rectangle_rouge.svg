@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="138px" height="137px" viewBox="0 0 138 137" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="83.4168043%" y1="0%" x2="16.5831957%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#C31043" offset="0%"></stop>
+            <stop stop-color="#8C0C31" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="LineUp-Mobile-nouveau-design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Heure-de-passage" transform="translate(-16.000000, -216.000000)">
+            <g id="Group-7" transform="translate(-14.503932, 186.496068)">
+                <polygon id="Rectangle" fill="url(#linearGradient-1)" points="38.5039318 29.5039318 150.503932 29.5039318 150.503932 166.503932 38.5039318 166.503932"></polygon>
+                <g id="Action/ic_receipt" opacity="0.200000003" transform="translate(94.500000, 94.500000) rotate(-31.000000) translate(-94.500000, -94.500000) translate(26.000000, 26.000000)">
+                    <g id="ic_receipt">
+                        <polygon id="Bounds" points="0 0 137 0 137 137 0 137"></polygon>
+                        <path d="M102.75,97.0416667 L34.25,97.0416667 L34.25,85.625 L102.75,85.625 L102.75,97.0416667 L102.75,97.0416667 Z M102.75,74.2083333 L34.25,74.2083333 L34.25,62.7916667 L102.75,62.7916667 L102.75,74.2083333 L102.75,74.2083333 Z M102.75,51.375 L34.25,51.375 L34.25,39.9583333 L102.75,39.9583333 L102.75,51.375 L102.75,51.375 Z M17.125,125.583333 L25.6875,117.020833 L34.25,125.583333 L42.8125,117.020833 L51.375,125.583333 L59.9375,117.020833 L68.5,125.583333 L77.0625,117.020833 L85.625,125.583333 L94.1875,117.020833 L102.75,125.583333 L111.3125,117.020833 L119.875,125.583333 L119.875,11.4166667 L111.3125,19.9791667 L102.75,11.4166667 L94.1875,19.9791667 L85.625,11.4166667 L77.0625,19.9791667 L68.5,11.4166667 L59.9375,19.9791667 L51.375,11.4166667 L42.8125,19.9791667 L34.25,11.4166667 L25.6875,19.9791667 L17.125,11.4166667 L17.125,125.583333 L17.125,125.583333 Z" id="Icon" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

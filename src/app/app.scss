@@ -1,0 +1,156 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+
+body {
+  font-family: "AvenirLTStd-Roman", sans-serif;
+}
+
+.scroll-content {
+  background-color: #FAFAFA;
+  margin: 0;
+}
+
+.agences {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 0 10px -6px black;
+  background-color: #FFFFFF;
+}
+
+.agence {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  //border-bottom: 1px solid #f4f4f4;
+  padding-bottom: 7px;
+}
+
+.km {
+  text-align: right;
+}
+
+.services {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 0 10px -6px black;
+  background-color: #FFFFFF;
+}
+
+.service {
+  display: flex;
+  //border-bottom: 1px solid #f4f4f4;
+  padding-bottom: 7px;
+  padding-top: 10px;
+}
+
+.thumb {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+}
+
+.ticket_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);*/
+  background: url(../assets/imgs/ticket.svg) center no-repeat;
+  background-size: 121%;
+  width: 100%;
+  height: 128px;
+  border-radius: 6px;
+  box-shadow: 1px 0 10px -6px black;
+  overflow: hidden;
+}
+
+.ticket_box p {
+  color: #FFFFFF;
+  font-size: 4.5rem;
+}
+
+.estimationTemps {
+  font-size: 35px;
+  /*font-weight: bold;*/
+}
+
+.header {
+  background: url("../assets/imgs/header_medium.svg") center no-repeat;
+  height: 114px;
+  background-size: cover;
+}
+
+.header-medium {
+  background: url("../assets/imgs/header_medium.svg") center no-repeat;
+  height: 185px;
+  background-size: cover;
+}
+
+.header-connexion {
+  background: url("../assets/imgs/header_connexion.png") center no-repeat;
+  height: 272px;
+  background-size: cover;
+}
+
+.content_ticket {
+  background: #FFFFFF;
+}
+
+.header-content {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 26px;
+  justify-content: space-between;
+}
+
+.content_ticket_virtuel {
+  /*background: #fff0 url(../assets/imgs/ticket_bg_2.svg) center no-repeat;*/
+  background-size: contain;
+  padding: 20px;
+  margin: -74px 20px 20px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: -2px 13px 29px -14px rgba(0,0,0,0.75);
+}
+
+.statut-bar {
+  height: 44px
+}
+
+.tabbar.show-tabbar {
+  border-radius: 23px 23px 0 0;
+  // box-shadow: 0px -1px 12px -3px rgba(0, 0, 0, 0.23);
+}
+
+._content {
+  display: block;
+  height: 84%;
+  width: 100%;
+  position: absolute;
+  overflow: scroll;
+  top: 114px;
+}
+
+.list-ios>.item-block:first-child {
+  border-top: none;
+}
+.list-ios>.item-block:last-child {
+    border-bottom: none;
+}

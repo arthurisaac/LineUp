@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="343px" height="285px" viewBox="0 0 343 285" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="49.1101143%" y1="68.7707355%" x2="10.0618004%" y2="31.8883829%" id="linearGradient-1">
+            <stop stop-color="#3A7FDB" offset="0%"></stop>
+            <stop stop-color="#58A0FF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M8,0 L327,0 C331.418278,-8.11624501e-16 335,3.581722 335,8 L335,262 C335,266.418278 331.418278,270 327,270 L8,270 C3.581722,270 5.41083001e-16,266.418278 0,262 L0,8 C-5.41083001e-16,3.581722 3.581722,8.11624501e-16 8,0 Z" id="path-2"></path>
+        <filter x="-3.4%" y="-2.8%" width="106.9%" height="111.1%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="5" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="11" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.682352941   0 0 0 0 0.756862745   0 0 0 0 0.968627451  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M6.409713,-2.58960077e-16 L108.590287,2.58960077e-16 C110.819084,-1.50463262e-16 111.627299,0.232064028 112.442114,0.667831759 C113.256929,1.10359949 113.896401,1.74307093 114.332168,2.55788574 C114.767936,3.37270056 115,4.18091615 115,6.409713 L115,35.590287 C115,37.8190838 114.767936,38.6272994 114.332168,39.4421143 C113.896401,40.2569291 113.256929,40.8964005 112.442114,41.3321682 C111.627299,41.767936 110.819084,42 108.590287,42 L6.409713,42 C4.18091615,42 3.37270056,41.767936 2.55788574,41.3321682 C1.74307093,40.8964005 1.10359949,40.2569291 0.667831759,39.4421143 C0.232064028,38.6272994 1.00308841e-16,37.8190838 -1.72640051e-16,35.590287 L1.72640051e-16,6.409713 C-1.00308841e-16,4.18091615 0.232064028,3.37270056 0.667831759,2.55788574 C1.10359949,1.74307093 1.74307093,1.10359949 2.55788574,0.667831759 C3.37270056,0.232064028 4.18091615,1.50463262e-16 6.409713,-2.58960077e-16 Z" id="path-5"></path>
+        <filter x="-10.0%" y="-17.9%" width="120.0%" height="171.4%" filterUnits="objectBoundingBox" id="filter-6">
+            <feMorphology radius="5" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="11" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.459592896   0 0 0 0 0.512008899   0 0 0 0 0.73565051  0 0 0 0.735818614 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="LineUp-Mobile-nouveau-design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Suivre-la-file" transform="translate(-16.000000, -434.000000)">
+            <g id="Group-6" transform="translate(20.000000, 144.000000)">
+                <g id="1" transform="translate(0.000000, 290.000000)">
+                    <g id="Group-4">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <g id="Rectangle-2">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-2"></use>
+                            <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        </g>
+                        <g id="Group" mask="url(#mask-3)">
+                            <g transform="translate(25.000000, 203.000000)">
+                                <g id="Rectangle-4">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                                </g>
+                                <!--<text id="Aller" opacity="0.900000036" font-family="Avenir" font-size="15" font-weight="400">
+                                    <tspan x="42.175" y="26" fill="#273D52">Aller</tspan>
+                                </text>-->
+                            </g>
+                        </g>
+                        <!--<text id="Consulter-l’évolutio" opacity="0.900000036" mask="url(#mask-3)" font-family="Avenir" font-size="14" font-weight="600" fill="#FFFFFF">
+                            <tspan x="11" y="116">Consulter l’évolution </tspan>
+                            <tspan x="11" y="135">d’autres files d’attente</tspan>
+                        </text>-->
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

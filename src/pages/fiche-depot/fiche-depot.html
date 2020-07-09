@@ -1,0 +1,122 @@
+<!--
+  Generated template for the FicheDepotPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header hidden>
+  <ion-navbar>
+    <ion-title>ficheDepot</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="header-medium">
+    <div class="statut-bar" style="height: 44px">
+
+    </div>
+    <div class="header-content">
+      <div>
+        <img (click)="goBack()" src="../../assets/imgs/back.svg" style="height: 20px; width: auto"/>
+        <span style="position: relative;margin-left: 30px;top: -3px;font-size: 17px;color: #fff;">Fiche de versement espèces</span>
+      </div>
+      <div>
+      </div>
+    </div>
+  </div>
+
+  <br/>
+  <div class="_content">
+    <div style="
+      background-color: #fff;
+      margin: 5px 16px 16px 16px;
+      padding: 10px;
+      min-height: 343px;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+      border-radius: 5px;">
+
+      <p style="text-align: center;">{{ today | date:'d MMM y' }}</p>
+
+      <br/>
+      <br/>
+      <div style="text-align: center">
+        <ion-item>
+          <ion-input [(ngModel)]="fiche.beneficiaire" name="beneficiare" placeholder="Bénéficiaire"
+                     type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input [(ngModel)]="fiche.numero_compte" name="numero_compte" placeholder="Numéro de compte"
+                     type="text"></ion-input>
+        </ion-item>
+        <br/>
+        <br/>
+        <table style="width: 100%;">
+          <tr style="height: 36px;">
+            <td></td>
+            <td style="font-size: 18px">Billetage</td>
+            <td></td>
+            <td style="font-size: 18px">Quantité</td>
+            <td style="text-align: right; width: 30%; font-size: 14px;">Total</td>
+          </tr>
+          <tbody>
+          <tr *ngFor="let x of billetages">
+            <td><input (click)="addField()" src="../../assets/imgs/plus.png" style="position: relative; top: 3px; margin-right: 3px;"
+                       type="image" value=""/></td>
+            <td style="width: 198px;">
+              <input (click)="removeField(x)" src="../../assets/imgs/moins.svg" style="position: relative; top: 4px; margin-right: 3px;"
+                     type="image" value=""/>
+              <!--              <input placeholder="10 000"  [(ngModel)]="x.billetage" value="{{x.billetage}}" readonly style="width: 50%; text-align: center;">-->
+              <select [(ngModel)]="x.billetage" style="width: 50%; text-align: center;">
+                <option value="10000">10 000</option>
+                <option value="5000">5 000</option>
+                <option value="2000">2 000</option>
+                <option value="1000">1 000</option>
+                <option value="500">500</option>
+                <option value="200">200</option>
+                <option value="100">100</option>
+                <option value="50">50</option>
+                <option value="25">25</option>
+                <option value="10">10</option>
+                <option value="5">5</option>
+              </select>
+            </td>
+            <td>*</td>
+            <td>
+              <input (change)="addTotal(x)" [(ngModel)]="x.quantite" placeholder="0" style="width: 30%; text-align: center;"
+                     type="number">
+            </td>
+            <td style="text-align: right">
+              <input [(ngModel)]="x.total" placeholder="0" readonly style="width: 70%; text-align: center;">
+            </td>
+          </tr>
+          </tbody>
+        </table>
+        <br/>
+        <p style="text-align: right; margin-right: 10px;">
+          <span>- - - - - - - - -</span>
+          <br/>
+          {{tout | number:''}}
+        </p>
+        <br/>
+        <br/>
+        <ion-item>
+          <ion-input [(ngModel)]="fiche.remettant" name="remettant" placeholder="Nom et prenom du remettant"
+                     type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input [(ngModel)]="fiche.telephone" name="telephone" placeholder="Numéro de téléphone du remettant"
+                     type="text"></ion-input>
+        </ion-item>
+        <br/>
+        <br/>
+        <br/>
+        <div (click)="suivant()" style="text-align: center;">
+          <button color="danger" ion-button style="padding: 23px 70px;">Suivant</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</ion-content>

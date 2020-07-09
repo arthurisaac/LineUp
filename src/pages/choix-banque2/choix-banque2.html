@@ -1,0 +1,39 @@
+<ion-header hidden>
+  <ion-navbar>
+    <ion-title></ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+
+  <div class="header">
+    <div class="statut-bar" style="height: 44px"></div>
+    <div class="header-content">
+      <img (click)="goBack()" src="../../assets/imgs/back.svg" style="height: 20px; width: auto; position: relative; z-index: 2" />
+      <span style="position: relative;font-size: 19px;color: #fff;">Choisir banque</span>
+      <div>
+        <!--<img src="../../assets/imgs/point.svg" style="position: absolute;" *ngIf="new_notification">
+        <img src="../../assets/imgs/cloche.svg" (click)="goToNotifications()" />-->
+      </div>
+    </div>
+  </div>
+
+  <br />
+  <div class="_content">
+    <div (click)="goToChoixAgence(x)" *ngFor="let x of banque" class="banques">
+      <p>{{x.nom}}</p>
+      <div class="banques_logo">
+        <img src="../../assets/imgs/{{x.photoURL}}">
+      </div>
+    </div>
+
+    <div *ngIf="load" style="text-align: center">
+      <img src="../../assets/imgs/spinner.svg" style="width: 100px;"/>
+    </div>
+    <div *ngIf="erreur" style="text-align: center">
+      <img src="../../assets/imgs/warning.svg" style="width: 100px;"/>
+      <p>Pas d'acces internet</p>
+    </div>
+
+  </div>
+
+</ion-content>

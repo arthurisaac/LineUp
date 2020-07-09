@@ -1,0 +1,31 @@
+page-splash {
+
+  .scroll-content {
+    background-color: #FFFFFF;
+  }
+
+  #splash {
+    height: calc( 100vh - 80px );
+    background-size: 100% auto;
+  }
+
+  ion-content > div.scroll-content {
+    overflow: hidden;
+  }
+
+  /*@media screen and (max-height: 700px) {
+    #splash {
+      background: #fff url(../../assets/imgs/splash_s.png) no-repeat;
+      background-position: bottom;
+    }
+  }
+
+  @media screen and (min-height: 700px) {
+    #splash {
+      background: #fff url(../../assets/imgs/splash.png) no-repeat;
+      background-position: bottom;
+    }
+  }
+*/
+
+}

@@ -1,0 +1,93 @@
+<!--
+  Generated template for the ChoixServicePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header hidden>
+  <ion-navbar>
+    <ion-title></ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+
+  <!--  <div style="-->
+  <!--      position: absolute;-->
+  <!--      background: #08080869;-->
+  <!--      width: 100%;-->
+  <!--      height: 100%;-->
+  <!--      z-index: 1;" *ngIf="myModal" (click)="hideMyModal()"></div>-->
+
+  <div class="header">
+    <div class="statut-bar" style="height: 44px">
+
+    </div>
+    <div class="header-content">
+      <img (click)="goBack()" src="../../assets/imgs/back.svg" style="height: 20px; width: auto; position: relative; z-index: 2"/>
+      <div
+        style="position: relative; top: 0;font-size: 17px;color: #fff;flex: 1;text-align: center;margin-left: -30px;">
+        Choisir service
+      </div>
+    </div>
+  </div>
+
+  <br/>
+  <div class="_content">
+    <div class="services">
+      <ion-list no-margin>
+        <ion-item (click)="showDialog(x)" *ngFor="let x of services">
+          <div class="service">
+            <div class="thumb">
+              <img src="{{this.url}}uploads/{{x.photo}}">
+            </div>
+            <div style="margin: 4px 4px 4px 16px;">
+              <strong>{{x.nom}}</strong>
+              <p>{{x.restant}} personne en attente</p>
+            </div>
+          </div>
+        </ion-item>
+      </ion-list>
+      <div *ngIf="load" style="text-align: center">
+        <img src="../../assets/imgs/spinner.svg" style="width: 100px;"/>
+      </div>
+      <div *ngIf="erreur" style="text-align: center">
+        <img src="../../assets/imgs/warning.svg" style="width: 100px;"/>
+        <p>Pas d'acces internet</p>
+      </div>
+      <!--<div *ngIf="services.length === 0">-->
+      <!--<p style="text-align: center;">Aucun service disponible</p>-->
+      <!--</div>-->
+    </div>
+  </div>
+
+
+  <!--  <div style="-->
+  <!--        position: absolute;-->
+  <!--        background: #ffffff;-->
+  <!--        padding: 16px;-->
+  <!--        width: 300px;-->
+  <!--        left: 50%;-->
+  <!--        top: 50%;-->
+  <!--        transform: translate(-50%, -50%);-->
+  <!--        border-radius: 8px;-->
+  <!--        z-index: 2;" *ngIf="myModal">-->
+  <!--    <div style="text-align: center;">-->
+  <!--      <img src="../../assets/imgs/doc.png" width="150">-->
+  <!--    </div>-->
+  <!--    <p style="text-align: center;">-->
+  <!--      Souhaitez vous remplir la fiche de dépôt maintenant ?-->
+  <!--    </p>-->
+  <!--    <br />-->
+  <!--    <div style="margin: 8px; text-align: center;">-->
+  <!--      <span style="-->
+  <!--                background-color: #c91045;-->
+  <!--                color: #ffffff;-->
+  <!--                padding: 7px 10px 7px 10px;-->
+  <!--                border-radius: 4px;-->
+  <!--                position: relative;-->
+  <!--                top: -6px;-->
+  <!--                left: -13px;" (click)="goToFicheDepot()">Oui</span>-->
+  <!--      <input type="image" src="../../assets/imgs/btn_poursuivre.png" (click)="goToPrendreTicket()" style="position: relative; right: -11px;">-->
+  <!--    </div>-->
+  <!--  </div>-->
+</ion-content>

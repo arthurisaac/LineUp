@@ -1,0 +1,142 @@
+<!--
+  Generated template for the ProfilPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header hidden>
+  <ion-navbar>
+    <ion-title>profil</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="header-medium">
+    <div class="statut-bar" style="height: 44px">
+
+    </div>
+    <div class="header-content">
+      <div>
+        <img menuToggle src="../../assets/imgs/menu.svg" style="height: 32px; width: auto" />
+      </div>
+      <span style="position: relative;font-size: 19px;color: #fff;">Profil</span>
+      <div>
+        <!--<img src="../../assets/imgs/point.svg" style="position: absolute;">
+        <img src="../../assets/imgs/cloche.svg" />-->
+      </div>
+    </div>
+  </div>
+
+  <br />
+  <div class="_content">
+    <div style="
+      background-color: #fff;
+      margin: 5px 16px 16px 16px;
+      padding: 10px;
+      min-height: 343px;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+      border-radius: 5px;">
+
+      <ion-row>
+        <ion-col col-1>
+          <img src="../../assets/imgs/avatar.png" style="position: relative; top: 13px;"/>
+        </ion-col>
+        <ion-col>
+          <ion-item>
+            <ion-input #inputNom (ngModelChange)="toggleNomTrue()" [(ngModel)]="user.nom"  placeholder="Nom" type="text" ></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col col-1>
+          <img *ngIf="!edNom" src="../../assets/imgs/pencil.svg"  style="position: relative; top: 14px;"  />
+          <img (click)="toggleNomFalse()" *ngIf="edNom"  src="../../assets/imgs/checked.svg" style="position: relative; top: 14px;"  />
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-1>
+          <img src="../../assets/imgs/avatar.png" style="position: relative; top: 13px;" />
+        </ion-col>
+        <ion-col>
+          <ion-item>
+            <ion-input (ngModelChange)="togglePrenomTrue()" [(ngModel)]="user.prenom"  placeholder="Prénom" type="text"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col col-1>
+          <img *ngIf="!edPrenom" src="../../assets/imgs/pencil.svg"  style="position: relative; top: 14px;"   />
+          <img (click)="togglePrenomFalse()" *ngIf="edPrenom"  src="../../assets/imgs/checked.svg"  style="position: relative; top: 14px;"   />
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-1>
+          <img src="../../assets/imgs/mail.svg" style="position: relative; top: 13px;" />
+        </ion-col>
+        <ion-col>
+          <ion-item>
+            <ion-input [(ngModel)]="user.email" placeholder="Email" readonly type="email"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col col-1></ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-1>
+          <img src="../../assets/imgs/phone.png" style="position: relative; top: 9px; width: 13px;" />
+        </ion-col>
+        <ion-col>
+          <ion-item>
+            <ion-input (ngModelChange)="toggleTelTrue()" [(ngModel)]="user.tel" placeholder="Numero de telephone" type="tel"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col col-1>
+            <img *ngIf="!edTel" src="../../assets/imgs/pencil.svg"  style="position: relative; top: 14px;"  />
+            <img (click)="toggleTelFalse()" *ngIf="edTel"  src="../../assets/imgs/checked.svg"  style="position: relative; top: 14px;"   />
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-1>
+          <img src="../../assets/imgs/lock.svg" style="position: relative; top: 13px;" />
+        </ion-col>
+        <ion-col>
+          <ion-item>
+            <ion-input [(ngModel)]="user.password" disabled placeholder="*****" type="password"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col col-3>
+          <button
+          (click)="savePassword()"
+          style="position: relative;top: 14px;font-size: 13px; background-color: transparent; color: blue;">Changer</button>
+        </ion-col>
+      </ion-row>
+
+      <div style="text-align: center">
+        <!--<button (click)="savePassword()">Nouveau mot de passe</button>
+        <br />-->
+        <br />
+        <button (click)="logout()" color="danger" ion-button>Deconnexion</button>
+      </div>
+      <br />
+      <p>Comment souhaitez-vous recevoir les alertes?</p>
+      <ion-row>
+        <ion-col col-6>
+            Par notification
+        </ion-col>
+        <ion-col col-1>
+            <input (change)="changeNotif()" [(ngModel)]="notification" checked="notification" name="notification"  type="checkbox" />
+        </ion-col>
+      </ion-row>
+      <!--<ion-row>
+        <ion-col col-6>
+          Par SMS
+        </ion-col>
+        <ion-col col-1>
+            <input type="checkbox" name="sms" (change)="changeSMS()" [(ngModel)]="sms"   checked="sms"/>
+        </ion-col>
+      </ion-row>-->
+
+    </div>
+  </div>
+
+</ion-content>

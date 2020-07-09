@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="15px" viewBox="0 0 20 15" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M20,7.27835474 L12,14 L4,7.26878929 L4,7 L20,7 L20,7.27835474 Z M4,18 L4,10 L12,16.9869646 L20,10.0079454 L20,18 L4,18 Z M2,20 L22,20 L22,5 L2,5 L2,20 Z" id="path-1"></path>
+    </defs>
+    <g id="LineUp-Mobile-nouveau-design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Connexion" transform="translate(-88.000000, -277.000000)">
+            <g id="edittext_icon" transform="translate(78.000000, 272.000000)">
+                <g id="icon" transform="translate(8.000000, 0.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#820D2E" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

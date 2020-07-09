@@ -1,0 +1,37 @@
+<ion-menu (ionOpen)="ionOpen()" [content]="content" type="overlay">
+  <ion-header hidden>
+    <ion-navbar>
+      <ion-title></ion-title>
+    </ion-navbar>
+  </ion-header>
+  <ion-content>
+    <div class="header">
+      <div class="statut-bar" style="height: 44px">
+
+      </div>
+      <div class="header-content">
+        <div></div>
+        <span style="position: relative;font-size: 19px;color: #fff;">Numéros attribués</span>
+        <div></div>
+      </div>
+      <div class="_content">
+        <div *ngIf="loading" text-center><img src="../../assets/imgs/spinner.svg" style="width: 100px;"/></div>
+        <ion-item (click)="goToMesTickets(x)" *ngFor="let x of tickets">
+          <div style="padding: 20px; text-align: center;">
+            <img src="{{x.photoURL}}" style="position: relative; padding: 10px; left: -16px;height: 100px;" />
+            <div style="display: flex; justify-content: space-between;">
+              <div><span style="font-weight: bold;">Ticket: </span><span>N° {{x.ticket}}</span></div>
+              <div><span style="font-weight: bold;">Code: </span>{{x.code}}</div>
+            </div>
+          </div>
+        </ion-item>
+        <!--<button (click)="pushed()">Pushed</button>-->
+      </div>
+    </div>
+  </ion-content>
+</ion-menu>
+<ion-tabs #content>
+  <ion-tab [root]="tab1Root" tabIcon="ios-home" tabTitle="Prendre un ticket"></ion-tab>
+  <ion-tab [root]="tab2Root" tabIcon="people" tabTitle="Suivre la file"></ion-tab>
+  <ion-tab [root]="tab3Root" tabIcon="ios-person" tabTitle="Profil"></ion-tab>
+</ion-tabs>

@@ -1,0 +1,134 @@
+<!--
+  Generated template for the ConnexionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header hidden>
+  <ion-navbar>
+    <ion-title></ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+
+  <div class="header-connexion">
+    <div class="statut-bar">
+
+    </div>
+    <div class="header-content">
+      <div  style="top: 160px;position: absolute;left: 50%;transform: translate(-50%);">
+        <label class="switch mt-5" >
+          <input (click)="basculer()" type="checkbox">
+          <span class="slider-switch round">
+                <span class="switch-non">Se connecter</span>
+                <span class="switch-oui">S'enregistrer</span>
+              </span>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div style="
+      background-color: #fff;
+      margin: -33px 16px 16px 16px;
+      padding: 10px;
+      min-height: 343px;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+      border-radius: 5px;">
+    <div *ngIf="!tabConn">
+      <br />
+      <div style="text-align: center">
+
+        <ion-row>
+          <ion-col col-1>
+            <img src="../../assets/imgs/mail_red.svg" style="position: relative; top: 13px;" />
+          </ion-col>
+          <ion-col>
+            <ion-item>
+              <ion-input [(ngModel)]="user.email" placeholder="Email" type="email"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col col-1>
+            <img src="../../assets/imgs/lock_red.png" style="position: relative; top: 13px; width: 14px;" />
+          </ion-col>
+          <ion-col>
+            <ion-item>
+              <ion-input [(ngModel)]="user.password" placeholder="Mot de passe" type="password"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <br />
+        <br />
+        <!--<input type="image" value="" src="../../assets/imgs/seconnecter.png"/>-->
+        <button (click)="login(user)" color="danger" ion-button style="padding: 28px 70px;" >Se connecter</button>
+        <br />
+        <br />
+        <p (click)="forget()" style="text-decoration: underline; color: #a5a4a4; font-size: 17px; font-weight: bold;" text-center>Mot de passe oublié ?</p>
+        <!--<input type="image" value="" src="../../assets/imgs/mot_de_passe_oublie.png" />-->
+      </div>
+    </div>
+    <div  *ngIf="tabConn">
+      <br />
+      <div style="text-align: center">
+
+        <ion-row>
+          <ion-col col-1>
+            <img src="../../assets/imgs/mail.svg" style="position: relative; top: 13px;" />
+          </ion-col>
+          <ion-col>
+            <ion-item>
+              <ion-input [(ngModel)]="user.email" placeholder="Email" type="email"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col col-1>
+            <img src="../../assets/imgs/phone.png" style="position: relative; top: 13px; width: 14px;" />
+          </ion-col>
+          <ion-col>
+            <ion-item>
+              <ion-input [(ngModel)]="user.tel" placeholder="Numero de telephone" type="tel"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col col-1>
+            <img src="../../assets/imgs/lock.svg" style="position: relative; top: 13px;" />
+          </ion-col>
+          <ion-col>
+            <ion-item>
+              <ion-input [(ngModel)]="user.password" placeholder="Mot de passe" type="password"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col col-1>
+            <img src="../../assets/imgs/lock.svg" style="position: relative; top: 13px;" />
+          </ion-col>
+          <ion-col>
+            <ion-item>
+              <ion-input [(ngModel)]="confirm" placeholder="Retaper mot de passe"  type="password"></ion-input>
+              <p *ngIf="user.password != confirm && confirm">Les mot de passe ne correspondent pas</p>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <br />
+        <br />
+        <br />
+        <!--<input type="image" value="" src="../../assets/imgs/sinscrire.svg" (click)="register(user)" />-->
+        <button (click)="register(user)" color="danger" ion-button style="padding: 28px 70px;" >S'inscrire</button>
+        <br />
+        <br />
+      </div>
+    </div>
+  </div>
+
+</ion-content>

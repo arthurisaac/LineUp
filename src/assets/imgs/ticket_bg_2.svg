@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="375px" height="509px" viewBox="0 0 375 509" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M7.74738458,476.644199 C-0.210471855,475.843645 1.32777961,457.402605 1.32777961,457.402605 L4.91964417e-15,237.700423 C18.1006808,225.250264 4.91964417e-15,217.370416 4.91964417e-15,217.370416 L0.0358666066,13.7945487 C-0.561910171,-0.664971955 9.36417322,0.00481510589 9.36417322,0.00481510589 L347.260486,0.00481510589 C347.260486,0.00481510589 357.225424,-0.664971955 356.624659,13.7945487 L356.660525,217.370416 C356.660525,217.370416 338.562833,225.250264 356.660525,237.700423 L356.660525,405.816976 C356.890534,423.222471 356.86193,453.796686 356.998821,464.712156 C357.135713,475.627626 344.712891,476.644197 344.712891,476.644197 C344.712891,476.644197 15.705241,477.444752 7.74738458,476.644199 Z" id="path-1"></path>
+        <filter x="-7.8%" y="-4.2%" width="115.7%" height="111.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="8" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.12 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="LineUp-Mobile-nouveau-design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Ticket-virtuel" transform="translate(0.000000, -108.000000)">
+            <g id="Group-7" transform="translate(8.000000, 116.000000)">
+                <g id="Ticket-Copy" style="mix-blend-mode: screen;">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M13.5,82.5 L345.5,82.5" id="Line-Copy" stroke="#E8E6E6" stroke-linecap="square"></path>
+                <!--<text id="Utilisez-ce-code-pou" font-family="Avenir-Book, Avenir" font-size="9" font-weight="normal" fill="#000000">
+                    <tspan x="22.42" y="461">Utilisez ce code pour imprimer votre ticket une fois arrivé à l’agence concernée</tspan>
+                </text>-->
+                <path d="M26,226.5 L331,226.5" id="Path-4" stroke="#DCDDE0" stroke-width="2" stroke-dasharray="9,9"></path>
+            </g>
+        </g>
+    </g>
+</svg>

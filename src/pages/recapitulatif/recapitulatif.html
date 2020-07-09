@@ -1,0 +1,98 @@
+<!--
+  Generated template for the RecapitulatifPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header hidden>
+  <ion-navbar>
+    <ion-title></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="header-medium">
+    <div class="statut-bar" style="height: 44px">
+
+    </div>
+    <div class="header-content">
+      <div>
+        <img (click)="goBack()" src="../../assets/imgs/back.svg" style="height: 20px; width: auto" />
+        <span style="position: relative;margin-left: 30px;top: -3px;font-size: 17px;color: #fff;">Fiche de versement espèces</span>
+      </div>
+      <div>
+        <!--<img src="../../assets/imgs/point.svg" style="position: absolute;">
+        <img src="../../assets/imgs/cloche.svg" />-->
+      </div>
+    </div>
+  </div>
+
+  <br />
+  <div class="_content">
+    <div style="
+      background-color: #fff;
+      margin: 5px 16px 16px 16px;
+      padding: 10px;
+      min-height: 343px;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+      border-radius: 5px;">
+
+      <p style="text-align: center; font-size: 16px; font-weight: bold;">Récapitulatif</p>
+      <span (click)="goBack()" style="float: right;
+          position: relative;
+          top: -49px;
+          right: 12px;
+          color: #D40000;">
+        Modifier
+      </span>
+
+      <br />
+      <br />
+      <strong>Beneficiaire: </strong> {{fiche.beneficiaire}}
+      <br />
+      <strong>Numéro de compte: </strong> {{fiche.numero_compte}}
+      <br />
+      <br />
+      <table style="width: 100%;">
+        <thead>
+          <tr style="height: 36px;">
+            <td>Billetage</td>
+            <td style="width: 24px;"></td>
+            <td>Quantité</td>
+            <td style="text-align: right; width: 30%;">Total</td>
+          </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let x of fiche.billetage">
+          <td>
+            {{x.billetage}}
+          </td>
+          <td>*</td>
+          <td>
+            {{x.quantite}}
+          </td>
+          <td style="text-align: right">
+            {{x.total}}
+          </td>
+        </tr>
+        </tbody>
+      </table>
+      <p style="text-align: right;">
+        ----------------
+        <br />
+        {{fiche.total}}
+      </p>
+      <br />
+      <strong>Montant en lettres: </strong> {{lettre}} F CFA <br />
+      <strong>Nom et prenom du remettant: </strong> {{fiche.remettant | uppercase}} <br />
+      <strong>Numéro de téléphone du remettant: </strong> {{fiche.telephone}} <br />
+      <br />
+      <br />
+      <div style="text-align: center;">
+        <input (click)="suivant()" src="../../assets/imgs/btn_suivant.png" type="image">
+      </div>
+    </div>
+  </div>
+
+</ion-content>

@@ -1,0 +1,63 @@
+<!--
+  Generated template for the TicketVirtuelPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header hidden>
+  <ion-navbar>
+    <ion-title></ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+
+  <div class="header-medium">
+    <div class="statut-bar" style="height: 44px">
+
+    </div>
+    <div class="header-content">
+      <div style="position: relative; top: 0;font-size: 17px;color: #fff;flex: 1;text-align: center;">Votre ticket virtuel</div>
+    </div>
+  </div>
+  <div class="content_ticket_virtuel">
+
+    <div style="margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;">
+      <img src="{{logo}}" style="height: 50px;">
+    </div>
+
+    <div style="text-align: center;">
+      <p style="font-size: 17px;">Votre numéro est le :</p>
+      <div style="
+              font-weight: bold;
+              font-size: 52px;
+          ">
+        {{ticket}}
+      </div>
+    </div>
+
+    <div style="margin: 26px 16px 12px 16px; text-align: center">
+      <p style="margin-bottom: 20px;">Estimation du temps d’attente:</p>
+      <!--<div style="font-size: 26px;">{{heureE}} H {{minuteE}} MN</div>-->
+      <div style="font-size: 26px;">{{estimation | date : 'H'}} H {{estimation | date: 'mm'}} MN</div>
+
+      <div>
+        <div style="height: 1px; border: 1px dashed #c8c7cc; margin: 15px;"></div>
+      </div>
+      <p style="margin: 16px 16px 13px 16px;">Code d'impression:</p>
+      <div style=" font-size: 33px;">{{code}}</div>
+    </div>
+
+    <p style="font-size: 9px; text-align: center; ">Utilisez ce code pour imprimer votre ticket une fois arrivé à l’agence concernée</p>
+  </div>
+
+  <div style="margin-top: 18px; text-align: center;">
+      <button (click)="warning()" color="danger" ion-button  style="padding: 28px 70px;" >Retour</button>
+    <br />
+    <p style="padding: 15px;">Vous pourrez à tout moment consulter l’évolution de la file en cliquant sur l’onglet « Suivre la file ».</p>
+    <br />
+    <br />
+  </div>
+
+</ion-content>

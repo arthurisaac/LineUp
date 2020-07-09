@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="347px" height="76px" viewBox="0 0 347 76" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="48.5336064%" x2="99.7730152%" y2="51.4597366%" id="linearGradient-1">
+            <stop stop-color="#A60F3A" offset="0%"></stop>
+            <stop stop-color="#CB1146" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="327" height="56" rx="28"></rect>
+        <filter x="-5.0%" y="-24.1%" width="110.1%" height="158.9%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.31372549   0 0 0 0 0.333333333  0 0 0 0.28 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="LineUp-Mobile-nouveau-design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Prendre-ticket" transform="translate(-15.000000, -593.000000)">
+            <g id="Group-7" transform="translate(25.000000, 600.000000)">
+                <g id="Base">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+                <text id="Prendre-ce-numéro" font-family="Avenir-Medium, Avenir" font-size="18" font-weight="400" line-spacing="22" letter-spacing="-0.4341176" fill="#FFFFFF">-->
+                    <!--<tspan x="88" y="35">Prendre ce numéro</tspan>-->
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

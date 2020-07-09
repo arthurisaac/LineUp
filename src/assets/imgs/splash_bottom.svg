@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="375px" height="270px" viewBox="0 0 375 270" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>Rectangle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="45.0126178%" y1="30.9733679%" x2="71.8850551%" y2="68.2557142%" id="linearGradient-1">
+            <stop stop-color="#F01452" offset="0%"></stop>
+            <stop stop-color="#830D2E" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="LineUp-Mobile-nouveau-design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Splash-page" transform="translate(0.000000, -542.000000)" fill="url(#linearGradient-1)">
+            <g id="bg" transform="translate(0.000000, 311.000000)">
+                <g id="map">
+                    <path d="M0,314.739749 L89.5889821,352.235536 C108.400178,360.108609 129.901322,358.061064 146.888376,346.778939 L309.763337,238.603873 C329.085866,225.770618 355.153279,231.031215 367.986533,250.353743 C372.560281,257.240256 375,265.32341 375,273.590406 L375,285.605918 L375,501 L0,501 L0,314.739749 Z" id="Rectangle"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

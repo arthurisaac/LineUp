@@ -1,0 +1,75 @@
+<!--
+  Generated template for the PrendreTicketPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header hidden>
+  <ion-navbar>
+    <ion-title></ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+
+  <div class="header">
+    <div class="statut-bar" style="height: 44px">
+
+    </div>
+    <div class="header-content">
+      <div></div>
+      <div>
+        <span style="position: relative;margin-left: 30px;top: -3px;font-size: 19px;color: #fff;">Suivre la file</span>
+      </div>
+      <div>
+        <!--<img src="../../assets/imgs/point.svg" style="position: absolute;">
+          <img src="../../assets/imgs/cloche.svg" />-->
+        </div>
+      </div>
+    </div>
+
+    <div class="content_ticket">
+      <br />
+      <br />
+      <p style="font-weight: bold; text-align: center">Le prochain numéro pour ce service est le: </p>
+
+      <div class="row">
+        <div style="text-align: center">
+          <div style="margin-top: 14px;">
+            <strong style="font-size: 25px;">{{ actu | date :  "dd" }}</strong>
+            <div>{{ actu | date :  "MMM" }}</div>
+            <div style="
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 8px;">
+            {{ actu | date :  "H:mm" }}
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="ticket_box">
+          <p>{{ticket}}</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top: 20px; text-align: center">
+      <p style="font-size: 19px; padding: 10px;">Estimation du temps d'attente:</p>
+      <div class="estimationTemps">{{heureE| number:'2.0'}}:{{minuteE| number:'2.0'}}:{{secondeE| number:'2.0'}}</div>
+    </div>
+
+    <div style="margin-top: 20px; text-align: center">
+      <p><span style="font-size: 17px;">Heure approximatif de passage: </span> <span style="font-size: 20px; font-weight: bold;">{{ date_estimation | date :  "HH:mm:ss" }}</span></p>
+      <br />
+      <p *ngIf="remain !== ''">Il y'a <strong>{{remain}} personne </strong> en attente</p>
+    </div>
+
+  </div>
+  <div style="background: url(../../assets/imgs/ticket_bg.svg) bottom no-repeat; background-size: cover; height: 75px; margin-top: -25px;">
+  </div>
+
+  <div style="text-align: center;">
+    <button (click)="goBack()" color="danger" ion-button  style="padding: 28px 70px;" >Retour</button>
+  </div>
+
+</ion-content>
