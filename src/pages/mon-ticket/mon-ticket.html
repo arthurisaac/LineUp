@@ -55,7 +55,9 @@
     <div *ngIf="!ecoule">
       <div style="margin-top: 20px; text-align: center">
         <p style="font-size: 19px; padding: 10px;">Estimation du temps d'attente:</p>
-        <div class="estimationTemps">{{heureA}} H {{minuteA}} MN</div>
+        <!--<div class="estimationTemps">{{heureA}} H {{minuteA}} MN</div>-->
+        <div class="estimationTemps">{{ date_estimation | date :  "HH:mm:ss" }}</div>
+
       </div>
 
       <div style="margin-top: 20px; text-align: center">

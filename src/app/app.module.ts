@@ -15,6 +15,7 @@ import {Geolocation} from '@ionic-native/geolocation';
 import {InAppBrowser} from '@ionic-native/in-app-browser';
 import {UserProvider} from '../providers/user/user';
 import {BanqueProvider} from '../providers/banque/banque';
+import {LocalNotifications} from "@ionic-native/local-notifications";
 
 
 registerLocaleData(localeFr, 'fr-FR', localeFrExtra);
@@ -48,7 +49,8 @@ registerLocaleData(localeFr, 'fr-FR', localeFrExtra);
     TicketProvider,
     ServiceProvider,
     UserProvider,
-    BanqueProvider
+    BanqueProvider,
+    LocalNotifications
   ]
 })
 export class AppModule {}

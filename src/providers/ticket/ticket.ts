@@ -32,7 +32,7 @@ export class TicketProvider {
       service: service,
       user: this.id
     };
-    return this.http.post<any>(url + 'tickets/currentticket', data);
+    return this.http.post<any>(url + 'tickets/current-ticket', data);
   }
 
   verifier(url, idUser, idTMP) {
@@ -40,12 +40,12 @@ export class TicketProvider {
   }
 
   saveTicket(ticket) {
-    return this.http.post<any>( `${Constants.getUrl()}/tickets/saveticket`, ticket );
+    return this.http.post<any>( `${Constants.getUrl()}/tickets/save-ticket`, ticket );
   }
 
   getTickets() {
     const params = { user : this.id };
-    return this.http.post<any>( `${Constants.getUrl()}/tickets/mytickets`, params );
+    return this.http.post<any>( `${Constants.getUrl()}/tickets/my-tickets`, params );
   }
 
   setReservation(ticket) {
