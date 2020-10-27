@@ -15,7 +15,7 @@
         <div></div>
       </div>
       <div class="_content">
-        <div *ngIf="loading" text-center><img src="../../assets/imgs/spinner.svg" style="width: 100px;"/></div>
+        <div *ngIf="loading" text-center><img src="assets/imgs/spinner.svg" style="width: 100px;"/></div>
         <ion-item (click)="goToMesTickets(x)" *ngFor="let x of tickets">
           <div style="padding: 20px; text-align: center;">
             <img src="{{x.photoURL}}" style="position: relative; padding: 10px; left: -16px;height: 100px;" />

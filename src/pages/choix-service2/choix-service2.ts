@@ -76,13 +76,7 @@ export class ChoixService2Page {
 
   showDialog(service) {
     this.service = service;
-    if (service.nom === 'Dépot') {
-      this.presentActionSheetDepot();
-    } else if (service.nom === 'Retrait') {
-      this.presentActionSheetRetrait();
-    } else {
-      this.goToPrendreTicket();
-    }
+    this.goToPrendreTicket();
   }
 
   hideMyModal() {

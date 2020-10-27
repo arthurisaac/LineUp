@@ -17,7 +17,7 @@
     </div>
     <div class="header-content">
       <div>
-        <img (click)="goBack()" src="../../assets/imgs/back.svg" style="height: 20px; width: auto"/>
+        <img (click)="goBack()" src="assets/imgs/back.svg" style="height: 20px; width: auto"/>
         <span style="position: relative;margin-left: 30px;top: -3px;font-size: 17px;color: #fff;">Fiche de versement espèces</span>
       </div>
       <div>
@@ -61,10 +61,10 @@
           </tr>
           <tbody>
           <tr *ngFor="let x of billetages">
-            <td><input (click)="addField()" src="../../assets/imgs/plus.png" style="position: relative; top: 3px; margin-right: 3px;"
+            <td><input (click)="addField()" src="assets/imgs/plus.png" style="position: relative; top: 3px; margin-right: 3px;"
                        type="image" value=""/></td>
             <td style="width: 198px;">
-              <input (click)="removeField(x)" src="../../assets/imgs/moins.svg" style="position: relative; top: 4px; margin-right: 3px;"
+              <input (click)="removeField(x)" src="assets/imgs/moins.svg" style="position: relative; top: 4px; margin-right: 3px;"
                      type="image" value=""/>
               <!--              <input placeholder="10 000"  [(ngModel)]="x.billetage" value="{{x.billetage}}" readonly style="width: 50%; text-align: center;">-->
               <select [(ngModel)]="x.billetage" style="width: 50%; text-align: center;">

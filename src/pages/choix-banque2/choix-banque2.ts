@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {Events, IonicPage, NavController, NavParams} from 'ionic-angular';
 import {BanqueProvider} from "../../providers/banque/banque";
+import {Constants} from "../../providers/Constants";
 
 /**
  * Generated class for the ChoixBanque2Page page.
@@ -20,6 +21,7 @@ export class ChoixBanque2Page {
   load: boolean = true;
   banque = [];
   new_notification = false;
+  url = Constants.getUrl();
 
   constructor(public navCtrl: NavController,
               public navParams: NavParams,

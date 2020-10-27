@@ -23,7 +23,7 @@
 
     </div>
     <div class="header-content">
-      <img (click)="goBack()" src="../../assets/imgs/back.svg" style="height: 20px; width: auto; position: relative; z-index: 2"/>
+      <img (click)="goBack()" src="assets/imgs/back.svg" style="height: 20px; width: auto; position: relative; z-index: 2"/>
       <div
         style="position: relative; top: 0;font-size: 17px;color: #fff;flex: 1;text-align: center;margin-left: -30px;">
         Choisir service
@@ -48,10 +48,10 @@
         </ion-item>
       </ion-list>
       <div *ngIf="load" style="text-align: center">
-        <img src="../../assets/imgs/spinner.svg" style="width: 100px;"/>
+        <img src="assets/imgs/spinner.svg" style="width: 100px;"/>
       </div>
       <div *ngIf="erreur" style="text-align: center">
-        <img src="../../assets/imgs/warning.svg" style="width: 100px;"/>
+        <img src="assets/imgs/warning.svg" style="width: 100px;"/>
         <p>Pas d'acces internet</p>
       </div>
       <!--<div *ngIf="services.length === 0">-->
@@ -72,7 +72,7 @@
   <!--        border-radius: 8px;-->
   <!--        z-index: 2;" *ngIf="myModal">-->
   <!--    <div style="text-align: center;">-->
-  <!--      <img src="../../assets/imgs/doc.png" width="150">-->
+  <!--      <img src="assets/imgs/doc.png" width="150">-->
   <!--    </div>-->
   <!--    <p style="text-align: center;">-->
   <!--      Souhaitez vous remplir la fiche de dépôt maintenant ?-->
@@ -87,7 +87,7 @@
   <!--                position: relative;-->
   <!--                top: -6px;-->
   <!--                left: -13px;" (click)="goToFicheDepot()">Oui</span>-->
-  <!--      <input type="image" src="../../assets/imgs/btn_poursuivre.png" (click)="goToPrendreTicket()" style="position: relative; right: -11px;">-->
+  <!--      <input type="image" src="assets/imgs/btn_poursuivre.png" (click)="goToPrendreTicket()" style="position: relative; right: -11px;">-->
   <!--    </div>-->
   <!--  </div>-->
 </ion-content>
