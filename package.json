@@ -60,7 +60,9 @@
                 "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+"
             },
             "cordova-plugin-ionic-keyboard": {},
-            "cordova-plugin-geolocation": {},
+            "cordova-plugin-geolocation": {
+                "GPS_REQUIRED": "true"
+            },
             "cordova-plugin-inappbrowser": {},
             "cordova-plugin-local-notification": {}
         },
